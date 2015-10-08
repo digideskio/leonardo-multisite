@@ -1,4 +1,4 @@
 
-from allowedsites import CachedAllowedSites
+from .allowedsites import CachedAllowedSites
 
 ALLOWED_HOSTS = CachedAllowedSites()

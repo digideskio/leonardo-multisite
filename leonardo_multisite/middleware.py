@@ -38,5 +38,5 @@ class MultiSiteMiddleware(object):
             self.actual_sites = [current_site.domain
                                  if current_site else current]
 
-            if current_site:
+            if getattr(settings, 'MULTISITE_ALIASES', False) and current_site:
                 self.actual_sites += current_site.name.split(';')

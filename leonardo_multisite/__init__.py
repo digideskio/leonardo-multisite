@@ -11,6 +11,8 @@ LEONARDO_MIDDLEWARES = ['leonardo_multisite.middleware.MultiSiteMiddleware']
 LEONARDO_CONFIG = {
     'MULTISITE_ENABLED': (False, _(
         'Enable multi site request processing')),
+    'MULTISITE_ALIASES': (False, _(
+        'Enable alias mapping to site')),
 }
 
 
