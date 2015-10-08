@@ -36,6 +36,14 @@ settings.py::
 
     ALLOWED_HOSTS = CachedAllowedSites()
 
+Aliases
+-------
+
+Yes sometimes you need to has same content on more domains, from this purposes is there redirect and inheriting but you need add these domains to ``ALLOWED_HOSTS`` and for proper page filtering create site per page. Define your domains as list repared by semicolon into name field on site like this::
+
+    site.domain = 'main-site.com'
+    site.name = 'site.com;site1.com;www.site.com'
+
 Read More
 ---------
 
